@@ -12,11 +12,13 @@ public class SumApp {
 		int numLine = sc.nextInt();
 
 		//코드를 작성하세요
-		try {
-			sum = numLine + sum;
-			System.out.println("합:" + sum);
-		} catch(NumberFormatException e) {
-			
+		String blank = String.valueOf(" ");
+		String[] nArray = blank.split(" ");
+		
+		
+		
+		for(int i = 0; i<nArray.length; i++) {
+			sum = Integer.parseInt(nArray[i]);
 			sum = numLine + sum;
 			System.out.println("합:" + sum);
 		}
