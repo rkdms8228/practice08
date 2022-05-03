@@ -16,20 +16,15 @@ public class FriendApp {
 		
 		for(int j = 0; j<InfoArray.length; j++) {
 			
-			String info = sc.nextLine();
+			String[] info = sc.nextLine().split(" ");
 			
-			String[] iArray = new String[3];
-				
-			iArray = info.split(" ");
+			InfoArray[j] = new Friend(info[0], info[1], info[2]);
 			
-			InfoArray[j].setName(iArray[0]);
-			InfoArray[j].setPh(iArray[1]);
-			InfoArray[j].setSchool(iArray[2]);
-			
-			InfoArray[j].showInfo();
-
 		}
 		
+		for(int i = 0; i<InfoArray.length; i++) {
+			InfoArray[i].showInfo();
+		}
 
 		sc.close();
 
