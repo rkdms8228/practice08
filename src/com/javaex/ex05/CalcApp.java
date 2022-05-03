@@ -11,11 +11,10 @@ public class CalcApp {
     	System.out.print(">> ");
     	String cal = sc.nextLine();
     	
-    	cal.trim();
+    	String[] cArray = cal.split(" ");
     	
     	int a, b;
     	
-    	String[] cArray = new String[3];
     	a = Integer.parseInt(cArray[0]);
     	b = Integer.parseInt(cArray[2]);
 
