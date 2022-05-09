@@ -14,12 +14,13 @@ public class CalcApp {
     	String[] cArray = cal.split(" ");
     	
     	int a, b;
+    	String c = cArray[1];
     	
     	a = Integer.parseInt(cArray[0]);
     	b = Integer.parseInt(cArray[2]);
-
     	
-    	switch(cArray[1]) {
+    	
+    	switch(c) {
 			case "+":
 				Add add = new Add();
 				add.setValue(a, b);
